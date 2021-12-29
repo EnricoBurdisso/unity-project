@@ -1,0 +1,7 @@
+asteroidi (grid?) <- sfera
+nemici -> ondate crescente (semplice, medi, avanzate, [boss = avanzate +]) <-
+[salvare]
+player (w + [mouse] -> left click) <- 
+power - up ?
+GUI
+[quests]
