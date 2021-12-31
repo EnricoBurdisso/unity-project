@@ -26,8 +26,9 @@ public class Laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+    
     public void FireLaser()
     {
             RaycastHit hit;
