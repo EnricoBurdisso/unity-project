@@ -8,10 +8,11 @@ public class EventManager : MonoBehaviour
     public static StartGameDelegate onStartGame;
 
     public delegate void TakeDamageDelegate(float amt);
-    public static TakeDamageDelegate onTakeDamage;
+    public static event TakeDamageDelegate onTakeDamage;
 
     public static void StartGame(){
       if(onStartGame != null){
+        //Debug.Log("START");
         onStartGame();
       }
     }
@@ -20,7 +21,9 @@ public class EventManager : MonoBehaviour
     {
       Debug.Log("Take Damage: " + percent);
 
-      if(onTakeDamage != null)
-          onTakeDamage(percent);
+        if (onTakeDamage != null)
+        {
+            onTakeDamage(percent);
+        }
     }
 }

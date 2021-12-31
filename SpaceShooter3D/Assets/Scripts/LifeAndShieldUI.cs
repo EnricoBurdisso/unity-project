@@ -14,11 +14,11 @@ public class LifeAndShieldUI : MonoBehaviour
 
 
 
-    void onEnable(){
+    void OnEnable(){
       EventManager.onTakeDamage += UpdateLifeDisplay;
     }
 
-    void onDisable(){
+    void OnDisable(){
       EventManager.onTakeDamage -= UpdateLifeDisplay;
     }
 
