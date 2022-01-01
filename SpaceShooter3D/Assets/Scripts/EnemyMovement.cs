@@ -13,10 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        if (!FindPlayer())
-        {
-            return;
-        }
+        
         PathFinding();
         HaveLineOfSightRayCast();
         Move();
@@ -120,21 +117,5 @@ public class EnemyMovement : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationalDamp * Time.deltaTime);
     }
 
-    bool FindPlayer()
-    {
-        if (player == null)
-        {
-            GameObject temp= GameObject.FindGameObjectWithTag("Player");
-            if (temp != null)
-            {
-                player = temp.transform;
-            }
-        }
-
-        if (player == null)
-        {
-            return false;
-        }
-        return true;
-    }
+    
 }

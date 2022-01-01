@@ -53,18 +53,24 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\LifeAndShield.cs" />
-    <Compile Include="Assets\Scripts\FollowCam.cs" />
     <Compile Include="Assets\Scripts\Laser.cs" />
-    <Compile Include="Assets\Scripts\Esplosion.cs" />
-    <Compile Include="Assets\Scripts\EventManager.cs" />
-    <Compile Include="Assets\Scripts\PlayerCollision.cs" />
-    <Compile Include="Assets\Scripts\FinalAsteroid.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
     <Compile Include="Assets\Scripts\PlayerShoot.cs" />
     <Compile Include="Assets\Scripts\LifeAndShieldUI.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\EventManager.cs" />
+    <Compile Include="Assets\Scripts\FollowCam.cs" />
+    <Compile Include="Assets\Scripts\LifeAndShield.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\FinalAsteroid.cs" />
+    <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
+    <Compile Include="Assets\Scripts\GameOverRestart.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\True Explosions\System\Shaders\SphereVolumetricExplosion.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -23,13 +23,10 @@ public class LifeAndShield : MonoBehaviour
         EventManager.TakeDamage(curHealth/(float)maxHealth);
 
         if(curHealth < 1){
-          //curHealth = 0;
-            Debug.Log("PLAYER DIED");
+            //curHealth = 0;
+            GetComponent<Explosion>().BlowUp();
+            //Debug.Log("PLAYER DIED");
         }
-
-
-
-          //GetComponent<Esplosion>().BlowUp();
 
     }
 

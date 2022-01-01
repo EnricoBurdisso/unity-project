@@ -5,7 +5,7 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     public delegate void StartGameDelegate();
-    public static StartGameDelegate onStartGame;
+    public static event StartGameDelegate onStartGame;
 
     public delegate void TakeDamageDelegate(float amt);
     public static event TakeDamageDelegate onTakeDamage;
