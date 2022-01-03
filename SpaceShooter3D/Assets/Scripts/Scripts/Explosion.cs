@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DisallowMultipleComponent]
 public class Explosion : MonoBehaviour
 {
     [SerializeField] private GameObject blowUp;
-    [SerializeField] private GameObject explosion;
     [SerializeField] LifeAndShield life;
-
+    [SerializeField] GameObject explosion;
 
     public void HitTaken(Vector3 pos){
       GameObject go = Instantiate(explosion, pos, Quaternion.identity, transform) as GameObject;
       Destroy(go, 6f);
 
       Debug.Log("Taking Damage");
+
+      if(life == null)
+        return;
 
       life.TakeDamage();
 

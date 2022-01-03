@@ -24,7 +24,9 @@ public class LifeAndShieldUI : MonoBehaviour
 
 
     void UpdateLifeDisplay(float percent){
-      Debug.Log("DisplayText: " + percent);
-      txt.text = "Life: " + percent * 100 + " %";
+      //Debug.Log("DisplayText: " + percent);
+
+      
+        txt.text = "Life: " + percent * 100 + " %";
     }
 }

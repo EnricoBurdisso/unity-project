@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[DisallowMultipleComponent]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 100f;
@@ -15,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
