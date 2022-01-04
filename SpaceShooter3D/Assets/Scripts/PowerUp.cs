@@ -23,6 +23,7 @@ public class PowerUp : MonoBehaviour
     {
         int prefabIndex = UnityEngine.Random.Range(0, prefabListPowerup.Count);
 
+
         Instantiate(prefabListPowerup[prefabIndex],
                               new Vector3(transform.position.x , transform.position.y , transform.position.z),
                               Quaternion.identity);
