@@ -39,7 +39,7 @@ public class EnemyAttack : MonoBehaviour
 
     if(Physics.Raycast(laser.transform.position, direction, out hit, laser.Distance)){
 
-      Debug.Log("Enemy hit: " + hit.transform.tag);
+      //Debug.Log("Enemy hit: " + hit.transform.tag);
       Debug.DrawLine(laser.transform.position, hit.point);
 
       if(hit.transform.CompareTag("Player")){
@@ -67,7 +67,7 @@ public class EnemyAttack : MonoBehaviour
   }
 
   void FireLaser(){
-    Debug.Log("Fire Laser");
+    //Debug.Log("Fire Laser");
     laser.FireLaser(hitPosition,target);
   }
 }

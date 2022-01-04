@@ -42,7 +42,7 @@ public class Laser : MonoBehaviour
         if(canFire){
           if(target != null)
             SpawnExplosion(targetPosition, target);
-            
+
           lineRenderer.SetPosition(0, transform.position);
           lineRenderer.SetPosition(1, targetPosition);
           lineRenderer.enabled = true;
@@ -84,7 +84,7 @@ public class Laser : MonoBehaviour
         Vector3 fwd = transform.TransformDirection(Vector3.forward) * maxDistanceShoot;
 
         if (Physics.Raycast(transform.position, fwd, out hit)){
-              Debug.Log("We hit: " + hit.transform.name + " with tag: " + hit.transform.tag);
+              //Debug.Log("We hit: " + hit.transform.name + " with tag: " + hit.transform.tag);
 
               Explosion temp = hit.transform.GetComponent<Explosion>();
               if(temp != null)
@@ -96,7 +96,7 @@ public class Laser : MonoBehaviour
 
               return hit.point;
         }else{
-          Debug.Log("We missed..");
+          //Debug.Log("We missed..");
           return transform.position +(transform.forward * maxDistanceShoot);
 
         }

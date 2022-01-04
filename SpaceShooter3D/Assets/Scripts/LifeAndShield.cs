@@ -20,11 +20,15 @@ public class LifeAndShield : MonoBehaviour
         if(curHealth < 0)
             curHealth = 0;
 
-        EventManager.TakeDamage(curHealth/(float)maxHealth);
+        //EventManager.TakeDamage(curHealth/(float)maxHealth);
+        if(gameObject.tag == "Player")
+          EventManager.TakeDamage(curHealth/(float)maxHealth);
 
         if(curHealth < 1){
             //curHealth = 0;
             GetComponent<Explosion>().BlowUp();
+
+            Destroy(gameObject);
             //Debug.Log("PLAYER DIED");
         }
 

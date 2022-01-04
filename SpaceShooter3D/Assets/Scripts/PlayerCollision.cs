@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class PlayerCollision : MonoBehaviour
 {
   [SerializeField] LifeAndShield life;
@@ -9,31 +10,17 @@ public class PlayerCollision : MonoBehaviour
   [SerializeField] int dmgEnemy = 10;
 
 
-  void PlayerHitByAsteroid(){
-    if(life == null){
-      return;
-    }
-    Debug.Log("Taking Damage by Asteroid");
-    life.TakeDamage(dmgAsteroid);
-  }
-
-  void PlayerHitByEnemy(){
-    if(life == null){
-      return;
-    }
-    Debug.Log("Taking Damage by Enemy");
-    life.TakeDamage(dmgEnemy);
-  }
-
   void OnCollisionEnter(Collision obj){
-
+      if(life == null){
+        return;
+      }
       //metti EventManager
       if(obj.gameObject.tag == "Obstacle"){
-        //EventManager.TakeDamage(20);
-        PlayerHitByAsteroid();
+
+        life.TakeDamage(dmgAsteroid);
       }
       if(obj.gameObject.tag == "Enemy"){
-        PlayerHitByEnemy();
+        life.TakeDamage(dmgEnemy);
       }
   }
 

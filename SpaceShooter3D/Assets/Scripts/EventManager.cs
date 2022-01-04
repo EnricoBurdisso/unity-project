@@ -19,7 +19,7 @@ public class EventManager : MonoBehaviour
 
     public static void TakeDamage(float percent)
     {
-      Debug.Log("Take Damage: " + percent);
+      //Debug.Log("Take Damage: " + percent);
 
         if (onTakeDamage != null)
         {
