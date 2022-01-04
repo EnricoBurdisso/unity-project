@@ -74,6 +74,9 @@ GameObject:
   - component: {fileID: 11467940}
   - component: {fileID: -5814507748964002129}
   - component: {fileID: -9160496434408737979}
+  - component: {fileID: 4559674286035537977}
+  - component: {fileID: 8316607927702256208}
+  - component: {fileID: 8920776262762743912}
   m_Layer: 0
   m_Name: Asteroid 3
   m_TagString: Obstacle
@@ -132,7 +135,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130102}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
@@ -151,6 +154,50 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.85
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4559674286035537977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74ab31be59607fb3907b11dde703a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: {fileID: 0}
+  dmgByAsteroid: 1
+  dmgByEnemy: 10
+  dmgByPlayer: 10
+--- !u!114 &8316607927702256208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992976e11e9b1d17aa1aa7649468c9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blowUp: {fileID: 100000, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
+  life: {fileID: 0}
+  explosion: {fileID: 100000, guid: fb1312d91b8716042b1151f9b514fc16, type: 3}
+  dmgByLaser: 20
+--- !u!114 &8920776262762743912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26953c43bb935094abda0ce9f1a23476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &153142
 GameObject:
   m_ObjectHideFlags: 0

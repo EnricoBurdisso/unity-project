@@ -84,12 +84,23 @@ public class Laser : MonoBehaviour
         Vector3 fwd = transform.TransformDirection(Vector3.forward) * maxDistanceShoot;
 
         if (Physics.Raycast(transform.position, fwd, out hit)){
-              //Debug.Log("We hit: " + hit.transform.name + " with tag: " + hit.transform.tag);
+              Debug.Log("We hit: " + hit.transform.name + " with tag: " + hit.transform.tag);
 
-              Explosion temp = hit.transform.GetComponent<Explosion>();
-              if(temp != null)
-                temp.HitTaken(hit.point);
-              //per poter collegare asteroide colpito con effetti particellari
+            /*Explosion temp = hit.transform.GetComponent<Explosion>();
+            if(temp != null)
+              temp.HitTaken(hit.point);*/
+            //per poter collegare asteroide colpito con effetti particellari
+
+            if (hit.transform.CompareTag("Obstacle"))
+            {
+                //Debug.Log("Asteroide colpito!");
+                //destroy astro
+                //spawn explosion
+                hit.transform.GetComponent<Explosion>().BlowUp();
+                Destroy(hit.transform.gameObject);
+                //spawn powerup
+                hit.transform.GetComponent<PowerUp>().InstantiatePowerUp();
+            }
 
 
               SpawnExplosion(hit.point, hit.transform);

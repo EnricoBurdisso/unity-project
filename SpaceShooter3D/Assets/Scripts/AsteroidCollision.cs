@@ -7,7 +7,7 @@ using UnityEngine;
 public class AsteroidCollision : MonoBehaviour
 {
 
-  [SerializeField] LifeAndShield life;
+  [SerializeField] private LifeAndShield life;
   [SerializeField] int dmgByAsteroid = 1;
   [SerializeField] int dmgByEnemy = 10;
   [SerializeField] int dmgByPlayer = 10;
@@ -22,7 +22,10 @@ public class AsteroidCollision : MonoBehaviour
       if(obj.gameObject.tag == "Enemy")
         life.TakeDamage(dmgByEnemy);
       if(obj.gameObject.tag == "Player")
-        life.TakeDamage(dmgByPlayer);
+        {
+            Debug.Log("Danno del player");
+            life.TakeDamage(dmgByPlayer);
+        }
 
   }
 

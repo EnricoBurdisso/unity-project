@@ -13,7 +13,8 @@ public class Explosion : MonoBehaviour
     [SerializeField] int dmgByLaser = 20;
 
 
-    public void HitTaken(Vector3 pos){
+    public void HitTaken(Vector3 pos)
+    {
       GameObject go = Instantiate(explosion, pos, Quaternion.identity, transform) as GameObject;
       Destroy(go, 6f);
 
@@ -25,20 +26,13 @@ public class Explosion : MonoBehaviour
       life.TakeDamage(dmgByLaser);
 
     }
-/*
-    void OnCollisionEnter(Collision collision){
-      foreach(ContactPoint contact in collision.contacts)
-        HitTaken(contact.point);
-    }
-*/
-
-
 
    public void BlowUp()
     {
         Debug.Log("BOOM");
         //summon particle effect
-        Instantiate(blowUp,transform.position,Quaternion.identity);
+        GameObject go = Instantiate(blowUp, transform.position, Quaternion.identity) as GameObject;
+        Destroy(go, 6f);
         //destroy self
         Destroy(gameObject);
         if(gameObject.tag == "Player")

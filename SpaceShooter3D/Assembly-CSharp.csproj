@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.21f1</UnityVersion>
@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Laser.cs" />
     <Compile Include="Assets\Scripts\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\EnemyCollision.cs" />
     <Compile Include="Assets\Scripts\LifeAndShieldUI.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
@@ -62,12 +63,22 @@
     <Compile Include="Assets\Scripts\FollowCam.cs" />
     <Compile Include="Assets\Scripts\LifeAndShield.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\GameOverRestart.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\FinalAsteroid.cs" />
     <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
-    <Compile Include="Assets\Scripts\GameOverRestart.cs" />
-    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\EnemyLaser.cs" />
+    <Compile Include="Assets\Scripts\AsteroidCollision.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\TakeablePowerUp.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\Utility\Singleton.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\CustomizablePowerUp.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpRotation.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\ScaleParticles.cs" />
+    <Compile Include="Assets\Scripts\PowerUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\True Explosions\System\Shaders\SphereVolumetricExplosion.shader" />
