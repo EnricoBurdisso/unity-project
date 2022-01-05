@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: -9160496434408737979}
   - component: {fileID: 4559674286035537977}
   - component: {fileID: 8316607927702256208}
-  - component: {fileID: 8920776262762743912}
+  - component: {fileID: 4146324534228435825}
   m_Layer: 0
   m_Name: Asteroid 3
   m_TagString: Obstacle
@@ -186,7 +186,7 @@ MonoBehaviour:
   life: {fileID: 0}
   explosion: {fileID: 100000, guid: fb1312d91b8716042b1151f9b514fc16, type: 3}
   dmgByLaser: 20
---- !u!114 &8920776262762743912
+--- !u!114 &4146324534228435825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

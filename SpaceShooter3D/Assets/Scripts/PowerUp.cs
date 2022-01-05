@@ -4,33 +4,43 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    private List<GameObject> prefabListPowerup = new List<GameObject>();
+    private List<GameObject> prefabPowerUp=new List<GameObject>();
+    private bool canTake;
+    [SerializeField] private int reg=10;
 
-    void Awake()
+    private void OnTriggerEnter(Collider col)
     {
-        Object[] powerup = Resources.LoadAll("PowerUp", typeof(GameObject));       //inserisci tutti i prefab da scegliere
-        if (powerup != null || powerup.Length > 0)
+        if (col.transform.CompareTag("Player"))
         {
-            foreach (Object p in powerup)
-            {
-                GameObject a = (GameObject)p;
-                prefabListPowerup.Add(a);
-            }
+            PickPowerUp(col.transform);
         }
     }
 
-    public void InstantiatePowerUp()
+    void PickPowerUp(Transform player)
     {
-        int prefabIndex = UnityEngine.Random.Range(0, prefabListPowerup.Count);
-
-
-        Instantiate(prefabListPowerup[prefabIndex],
-                              new Vector3(transform.position.x , transform.position.y , transform.position.z),
-                              Quaternion.identity);
-        /*Instantiate(prefabListPowerup[prefabIndex],
-                              new Vector3(transform.position.x , transform.position.y , transform.position.z),
-                              Quaternion.identity);*/
-
+        if (transform.CompareTag("PowerUpAll") && canTake==true) // recupero tutta la salute
+        {
+            Debug.Log("VERDE");
+            //recupero tutta la salute
+            int diff = LifeAndShield.maxHealth - LifeAndShield.curHealth;
+            player.GetComponent<LifeAndShield>().TakeDamage(-diff);
+            Destroy(gameObject);
+            //Debug.Log("cur: " + LifeAndShield.curHealth);
+            
+            //Debug.Log("cur: "+LifeAndShield.curHealth);
+            
+        }else if (transform.CompareTag("PowerUpTot") && canTake==true) //recupero un tot di vita
+        {
+            Debug.Log("BLU");
+            //recupero un tot di salute
+            player.GetComponent<LifeAndShield>().TakeDamage(-reg);
+            Debug.Log("cur: " + LifeAndShield.curHealth);
+            Destroy(gameObject);
+        }
+        //add powerup effect
+        //prefabPowerUp = powerupspawner.GetPrefabListPowerUp();
+        //Debug.Log(prefabPowerUp.Count);
+        //destroy powerup
     }
     // Start is called before the first frame update
     void Start()
@@ -41,6 +51,13 @@ public class PowerUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (LifeAndShield.curHealth < LifeAndShield.maxHealth)
+        {
+            canTake = true;
+        }
+        else
+        {
+            canTake = false;
+        }
     }
 }

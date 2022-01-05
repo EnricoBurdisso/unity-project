@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LifeAndShield : MonoBehaviour
 {
-    [SerializeField] int maxHealth = 10,
+    public static int maxHealth = 100,
                          curHealth;
 
     // Start is called before the first frame update
@@ -13,10 +13,13 @@ public class LifeAndShield : MonoBehaviour
         curHealth = maxHealth;
     }
 
+    public void test()
+    {
+        Debug.Log("test");
+    }
 
     public void TakeDamage(int dmg = 1){
         curHealth -= dmg;
-
         if(curHealth < 0)
             curHealth = 0;
 

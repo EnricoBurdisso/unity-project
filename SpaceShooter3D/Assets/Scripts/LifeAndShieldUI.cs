@@ -5,13 +5,12 @@ using UnityEngine.UI;
 
 public class LifeAndShieldUI : MonoBehaviour
 {
-    [SerializeField] Text txt;
+    [SerializeField]  Text txt;
 
 
     void Awake(){
       txt.text = "Life: " + 100 + " %";
     }
-
 
 
     void OnEnable(){

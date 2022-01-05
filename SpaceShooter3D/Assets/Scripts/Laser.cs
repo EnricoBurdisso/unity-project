@@ -99,7 +99,7 @@ public class Laser : MonoBehaviour
                 hit.transform.GetComponent<Explosion>().BlowUp();
                 Destroy(hit.transform.gameObject);
                 //spawn powerup
-                hit.transform.GetComponent<PowerUp>().InstantiatePowerUp();
+                hit.transform.GetComponent<PowerUpSpawner>().InstantiatePowerUp();
             }
 
 

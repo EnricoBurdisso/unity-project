@@ -54,13 +54,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Laser.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\TakeablePowerUp.cs" />
     <Compile Include="Assets\Scripts\PlayerShoot.cs" />
     <Compile Include="Assets\Scripts\EnemyCollision.cs" />
     <Compile Include="Assets\Scripts\LifeAndShieldUI.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\EventManager.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\CustomizablePowerUp.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\Utility\Singleton.cs" />
     <Compile Include="Assets\Scripts\FollowCam.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpRotation.cs" />
     <Compile Include="Assets\Scripts\LifeAndShield.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
@@ -71,13 +76,9 @@
     <Compile Include="Assets\Scripts\FinalAsteroid.cs" />
     <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
     <Compile Include="Assets\Scripts\EnemyLaser.cs" />
-    <Compile Include="Assets\Scripts\AsteroidCollision.cs" />
-    <Compile Include="Assets\PowerUp\Scripts\TakeablePowerUp.cs" />
-    <Compile Include="Assets\PowerUp\Scripts\Utility\Singleton.cs" />
-    <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
-    <Compile Include="Assets\PowerUp\Scripts\CustomizablePowerUp.cs" />
-    <Compile Include="Assets\PowerUp\Scripts\PowerUpRotation.cs" />
     <Compile Include="Assets\PowerUp\Scripts\ScaleParticles.cs" />
+    <Compile Include="Assets\Scripts\PowerUpSpawner.cs" />
+    <Compile Include="Assets\Scripts\AsteroidCollision.cs" />
     <Compile Include="Assets\Scripts\PowerUp.cs" />
   </ItemGroup>
   <ItemGroup>
