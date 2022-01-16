@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserOff: 0.5
-  maxDistanceShoot: 150
+  maxDistanceShoot: 300
   fireDelay: 1
 --- !u!108 &2711326765433154560
 Light:
@@ -4052,7 +4052,7 @@ MonoBehaviour:
   blowUp: {fileID: 100000, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
   life: {fileID: 8763273037752221852}
   explosion: {fileID: 485937648155450523, guid: 9148639c6a7392e2caa7d4a67d8552bf, type: 3}
-  dmgByLaser: 5
+  dmgByLaser: 1
 --- !u!1 &8763284745494229190
 GameObject:
   m_ObjectHideFlags: 0

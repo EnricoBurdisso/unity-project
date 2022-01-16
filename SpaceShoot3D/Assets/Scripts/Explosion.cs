@@ -41,7 +41,8 @@ public class Explosion : MonoBehaviour
           GetComponent<PowerUp>().InstantiatePowerUp();
 
         if(gameObject.tag == "Player"){
-          //EventManager.PlayerDeath();
+            //EventManager.PlayerDeath();
+            Destroy(gameObject);
           SceneManager.LoadScene("GameOver");
         }
 
