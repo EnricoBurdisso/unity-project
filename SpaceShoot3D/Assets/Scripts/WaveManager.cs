@@ -71,7 +71,7 @@ public class WaveManager : MonoBehaviour
 
       }else{
         //gioco finito!
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("YouWin");
 
       }
     }
