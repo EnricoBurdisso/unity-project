@@ -40,8 +40,6 @@ public class EnemyMovement : MonoBehaviour
         RaycastHit hit;
 
         Vector3 direction = player.position - transform.position;
-
-        //Debug.DrawRay(laser.transform.position, direction, Color.red);
         if (Physics.Raycast(transform.position, direction, out hit))
         {
             if (hit.transform != null)
@@ -53,8 +51,10 @@ public class EnemyMovement : MonoBehaviour
                     return true;
                 }
             }
+            
         }
         Debug.DrawRay(transform.position, direction, Color.red);
+
         return false;
     }
 
