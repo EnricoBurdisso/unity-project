@@ -19,6 +19,9 @@ public class EndGame : MonoBehaviour
 
     public void endGame()
     {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
         Application.Quit();
     }
 }

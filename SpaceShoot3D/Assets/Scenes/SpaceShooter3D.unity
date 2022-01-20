@@ -580,59 +580,51 @@ MonoBehaviour:
     typeOfEnemies:
     - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
     spawnInterval: 3
-  - waveName: Terzo ondata
-    numEnemies: 15
-    typeOfEnemies:
-    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
-    - {fileID: 8252401208223627379, guid: 0de9b779d4c466725bd50612da47ed2d, type: 3}
-    spawnInterval: 3
-  - waveName: Quarta ondata
-    numEnemies: 20
-    typeOfEnemies:
-    - {fileID: 8252401208223627379, guid: 0de9b779d4c466725bd50612da47ed2d, type: 3}
-    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
-    spawnInterval: 3
-  - waveName: Quinta ondata
+  - waveName: Seconda ondata
     numEnemies: 10
     typeOfEnemies:
-    - {fileID: 6532975562413279809, guid: 0a84df2cba0f947c0bbde3c4ee6aa116, type: 3}
-    spawnInterval: 4
-  - waveName: Sesta ondata
-    numEnemies: 15
-    typeOfEnemies:
-    - {fileID: 6532975562413279809, guid: 0a84df2cba0f947c0bbde3c4ee6aa116, type: 3}
-    spawnInterval: 2
-  - waveName: Settima ondata
-    numEnemies: 15
-    typeOfEnemies:
-    - {fileID: 6532975562413279809, guid: 0a84df2cba0f947c0bbde3c4ee6aa116, type: 3}
-    - {fileID: 8252401208223627379, guid: 0de9b779d4c466725bd50612da47ed2d, type: 3}
-    spawnInterval: 3
-  - waveName: Ottava ondata
-    numEnemies: 20
-    typeOfEnemies:
-    - {fileID: 6532975562413279809, guid: 0a84df2cba0f947c0bbde3c4ee6aa116, type: 3}
     - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
     spawnInterval: 3
-  - waveName: Nona ondata
-    numEnemies: 20
+  - waveName: Seconda ondata
+    numEnemies: 10
     typeOfEnemies:
-    - {fileID: 6532975562413279809, guid: 0a84df2cba0f947c0bbde3c4ee6aa116, type: 3}
-    - {fileID: 8252401208223627379, guid: 0de9b779d4c466725bd50612da47ed2d, type: 3}
     - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
-    spawnInterval: 2
-  - waveName: Ultima ondata
-    numEnemies: 35
+    spawnInterval: 3
+  - waveName: Seconda ondata
+    numEnemies: 10
     typeOfEnemies:
-    - {fileID: 6532975562413279809, guid: 0a84df2cba0f947c0bbde3c4ee6aa116, type: 3}
-    - {fileID: 8252401208223627379, guid: 0de9b779d4c466725bd50612da47ed2d, type: 3}
     - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
-    spawnInterval: 2
-  - waveName: Boss
-    numEnemies: 1
+    spawnInterval: 3
+  - waveName: Seconda ondata
+    numEnemies: 10
     typeOfEnemies:
-    - {fileID: 8179394523497918655, guid: 9ef61583a97c9c867b8180177393fe12, type: 3}
-    spawnInterval: 1
+    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
+    spawnInterval: 3
+  - waveName: Seconda ondata
+    numEnemies: 10
+    typeOfEnemies:
+    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
+    spawnInterval: 3
+  - waveName: Seconda ondata
+    numEnemies: 10
+    typeOfEnemies:
+    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
+    spawnInterval: 3
+  - waveName: Seconda ondata
+    numEnemies: 10
+    typeOfEnemies:
+    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
+    spawnInterval: 3
+  - waveName: Seconda ondata
+    numEnemies: 10
+    typeOfEnemies:
+    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
+    spawnInterval: 3
+  - waveName: Seconda ondata
+    numEnemies: 10
+    typeOfEnemies:
+    - {fileID: 8653834713565082871, guid: 062f44024bddbc6f6af14f8fb4171842, type: 3}
+    spawnInterval: 3
   spawnPoints:
   - {fileID: 1303784792}
   - {fileID: 1051404130}
