@@ -30,15 +30,15 @@ public class Explosion : MonoBehaviour
     }
 
 
-   public void BlowUp()
+    public void BlowUp()
     {
-        Debug.Log("BOOM");
+        Debug.Log("BOOM: "+transform);
         //summon particle effect
-        GameObject tmp = Instantiate(blowUp,transform.position,Quaternion.identity) as GameObject;
+        GameObject tmp = Instantiate(blowUp, transform.position, Quaternion.identity) as GameObject;
         Destroy(tmp, 3f);
 
-        if(gameObject.tag == "Obstacle")
-          GetComponent<PowerUp>().InstantiatePowerUp();
+        if (gameObject.tag == "Obstacle") 
+            GetComponent<PowerUp>().InstantiatePowerUp(); 
 
         if(gameObject.tag == "Player"){
             //EventManager.PlayerDeath();

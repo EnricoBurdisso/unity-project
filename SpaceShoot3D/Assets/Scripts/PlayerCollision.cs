@@ -53,7 +53,15 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (powerup.CompareTag(tagPowerUp + "Tot") && canTakePowerUp == true) //recupero tot saute
         {
-            life.TakeDamage(-tot);
+            if(life.getCurHealth() <= life.getMaxHealth() - tot)
+            {
+
+                life.TakeDamage(-tot);
+            }
+            else
+            {
+                life.TakeDamage(-(life.getMaxHealth() - life.getCurHealth()));
+            }
             EventManager.PickPowerUp("Cura Parziale");
             Destroy(powerup.gameObject);
             Debug.Log("cur: " + life.getCurHealth());
